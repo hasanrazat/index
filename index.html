@@ -209,6 +209,25 @@
               </a>
              </div>
              <div class="swiper-slide swiper-slide-next" style="width:94.8889px;margin-right:30px">
+                <style>
+                    /* Default spacing between slides */
+                    .swiper-slide {
+                      margin-right: 30px;
+                    }
+                  
+                    /* Tighter spacing on mobile screens */
+                    @media (max-width: 768px) {
+                      .swiper-slide {
+                        margin-right: 4px !important;
+                      }
+                    }
+                  
+                    /* Optional: Prevent unwanted spacing at the end */
+                    .swiper-wrapper {
+                      display: flex;
+                      padding-right: 0;
+                    }
+                  </style>                  
               <a class="gc-slider__slider__card" href="https://www.asdagiftcards.com/cards/uber-uk-ps15-150">
                <img alt="Uber image" class="default-slider-image" height="37" src="data:image/png;base64,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" width="56"/>
                <span>
